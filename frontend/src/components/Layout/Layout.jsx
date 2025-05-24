@@ -1,11 +1,12 @@
 import React from 'react';
 
 import { Outlet } from 'react-router';
+import AppHeader from '../AppHeader/AppHeader';
 
 const Layout = () => {
     return (
         <>
-            <header>Header</header>
+            <AppHeader/>
                 <main className='app-main'>
                     <Outlet/>
                 </main>
