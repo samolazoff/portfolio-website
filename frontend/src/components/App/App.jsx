@@ -1,10 +1,10 @@
+import AppRoutes from '../../routes/Routes';
+
 import './App.scss';
 
 function App() {
     return (
-        <>
-            Portfolio
-        </>
+        <AppRoutes/>
     )
 };
 
