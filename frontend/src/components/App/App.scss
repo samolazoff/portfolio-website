@@ -1,15 +1,16 @@
 @use '../../styles/default.scss';
 @use '../../styles/var.scss';
 
-.container{
-    display: flex;
-    max-width: 1400px;
-    padding: 1rem 2rem;
-}
-
 #root{
     min-height: 100Vh;
     border-radius: 20px;
     background-color: var.$bgc-main;
     color: var.$txt-main;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    width: 1400px;
+    padding: 1rem 2rem;
 }
