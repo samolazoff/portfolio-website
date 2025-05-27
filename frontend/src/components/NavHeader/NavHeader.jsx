@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './NavHeader.scss';
 
 import NavItem from './NavItem';

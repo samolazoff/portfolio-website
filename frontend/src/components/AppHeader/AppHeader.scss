@@ -1,8 +1,12 @@
+@use '../../styles/var.scss';
+
 .app-header{
     .container{
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
     }
-    
+}
+.header-nav-btn{
+    color: var.$txt-main;
 }
