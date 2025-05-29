@@ -1,0 +1,37 @@
+@use '../../styles/var.scss';
+
+.home-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    &-txt-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+        gap: 1rem;
+        width: 500px;
+    }
+    &__title{
+        font-size: 4rem;
+    }
+    &__subtitle{
+        font-size: 3rem;
+    }
+    &__txt{
+        font-size: 2rem;
+    }
+    &-btn-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 20px;
+    }
+    &__img{
+        width: 400px;
+    }
+}

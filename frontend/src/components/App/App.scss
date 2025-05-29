@@ -8,6 +8,27 @@
     color: var.$txt-main;
 }
 
+.btn{
+  display: block;
+  width: 200px;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  &__main{
+    background-color: var.$accent;
+    &:hover{
+      background-color: var.$active;
+    }
+  }
+  &__important{
+    background-color: var.$active;
+    &:hover{
+      background-color: var.$accent;
+    }
+  }
+}
+
 .container{
     margin: 0 auto;
     display: flex;
@@ -16,7 +37,7 @@
 }
 .app-main{
   position: relative;
-  padding-top: 5rem;
+  padding-top: 1rem;
   z-index: 1;
 }
 @media screen and (max-width: 1400px) {
