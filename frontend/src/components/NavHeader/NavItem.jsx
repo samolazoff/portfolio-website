@@ -1,9 +1,7 @@
-import React from 'react';
-
 import {NavLink} from 'react-router';
 
 const NavItem = (props) => {
-    
+
     const {path, name} = props;
 
     return (
@@ -12,7 +10,8 @@ const NavItem = (props) => {
                 to={path}
                 className = {
                     ({ isActive }) =>(isActive ? "active" : "")
-            }>
+            }
+            >
                 {name}
             </NavLink>
         </li>

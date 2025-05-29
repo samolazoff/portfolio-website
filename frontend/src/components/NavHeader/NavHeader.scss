@@ -1,20 +1,40 @@
 @use '../../styles/var.scss';
+
 .header-nav-items{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 3rem;
+}
+
+.header-nav-mobile{
+    // position: fixed;
+}
+
+.header-nav-items-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-nav-item{
     margin: 1rem 1rem;
     font-size: 1.2rem;
     text-transform: capitalize;
-    .header-nav-item{
-        &:hover{
-            color:  var.$accent;
-        }
-        .active{
-            color:  var.$active;
-            border-bottom: var.$active 2px solid;
-        }
+    &:hover{
+        color:  var.$accent;
+    }
+    .active{
+        color:  var.$active;
+        border-bottom: var.$active 2px solid;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-nav{
+        display: none;
     }
 }

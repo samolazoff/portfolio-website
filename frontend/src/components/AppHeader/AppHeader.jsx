@@ -3,7 +3,6 @@ import './AppHeader.scss';
 import NavHeader from '../NavHeader/NavHeader';
 
 import { useState } from 'react';
-import {motion} from 'framer-motion';
 import { Menu, X } from "lucide-react";
 
 const AppHeader = () => {
@@ -12,16 +11,15 @@ const AppHeader = () => {
 
     return (
         <header className='app-header'>
-            <div className="container">
+            <div className={!isOpen?'container':'container_mobile'}>
                 <h1 hidden>samolazoff</h1>
-                <NavHeader/>
                 <button
                     className='header-nav-btn'
                     onClick={()=>setOpen(!isOpen)}
                 >
                     {isOpen ? <X size={32} /> : <Menu size={32} />}
                 </button>
-
+                <NavHeader isOpen={isOpen}/>
             </div>
         </header>
     );

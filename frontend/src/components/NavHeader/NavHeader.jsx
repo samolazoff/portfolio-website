@@ -22,10 +22,15 @@ const dataNav = [
 
 ];
 
-const NavHeader = () => {
+const NavHeader = (props) => {
+
+    const {isOpen} = props;
+
     return (
-        <nav className='header-nav'>
-            <ul className='header-nav-items'>
+        <nav className={isOpen ?'header-nav-mobile':'header-nav'}>
+            <ul className={
+                isOpen ?'header-nav-items-mobile':'header-nav-items'
+                }>
                 {
                     dataNav.map((item, index) => (
                         <NavItem name={item.name} path={item.path} key={index}/>

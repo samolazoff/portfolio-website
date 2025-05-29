@@ -7,9 +7,9 @@ const Layout = () => {
     return (
         <>
             <AppHeader/>
-                <main className='app-main'>
-                    <Outlet/>
-                </main>
+            <main className='app-main'>
+                <Outlet/>
+            </main>
             <footer>footer</footer>
         </>
     );
