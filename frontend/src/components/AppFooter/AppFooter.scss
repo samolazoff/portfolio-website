@@ -1,0 +1,15 @@
+@use '../../styles/var.scss';
+
+.app-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    a{
+        font-size: 1.2rem;
+        &:hover{
+            color: var.$accent;
+        }
+    }    
+}

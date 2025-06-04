@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Outlet } from 'react-router';
 import AppHeader from '../AppHeader/AppHeader';
+import AppFooter from '../AppFooter/AppFooter';
 
 const Layout = () => {
     return (
@@ -10,7 +11,7 @@ const Layout = () => {
             <main className='app-main'>
                 <Outlet/>
             </main>
-            <footer>footer</footer>
+            <AppFooter/>
         </>
     );
 };
