@@ -35,10 +35,14 @@
     max-width: 1400px;
     padding: 1rem 2rem;
 }
+
 .app-main{
   position: relative;
   padding-top: 1rem;
   z-index: 1;
+}
+.title-block{
+  font-size: 4rem;
 }
 @media screen and (max-width: 1400px) {
  .container {
