@@ -16,6 +16,10 @@ const dataNav = [
         path: '/projects'
     },
     {
+        name: 'blog',
+        path: '/blog'
+    },
+    {
         name: 'contacts',
         path: '/contacts'
     }

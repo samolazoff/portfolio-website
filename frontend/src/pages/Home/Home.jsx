@@ -7,7 +7,7 @@ import './Home.scss';
 const Home = () => {
     return (
         <section className='container home-page'>
-            <div className="home-page-start-box">
+            <div className="home-page-box">
                 <div className="home-page-txt-box">
                     <h2 className="title-block">
                         Hi, I'm Raman Samalazau
@@ -23,22 +23,35 @@ const Home = () => {
                 </div>
                 <img src={page} alt="home-page__img" className="home-page__img" />
             </div>
-            <aside className='mini-about'>
-                <Link to='/about'>
-                    <h2 className="title-block">About Me</h2>
-                </Link>
-                 <span className="home-page__txt">
-                    I  am a web developer with a passion for creating beautiful, resposive and user-friendly websites. I have experience in developing web applications using modern technologies. 
-                </span>
-            </aside>
-            <article className='mini-projects'>
-                <Link to='/projects'>
-                    <h2 className="title-block">Projects</h2>
-                </Link>
-                <span className="home-page__txt">
-                    A brief description of projects.
-                </span>
-            </article>
+            <div className="home-page-box">
+                <div className="home-page-box-mini">
+                    <aside className='mini-about'>
+                        <Link to='/about'>
+                            <h2 className="title-block">About Me</h2>
+                        </Link>
+                        <span className="home-page__txt">
+                            I  am a web developer with a passion for creating beautiful, resposive and user-friendly websites. I have experience in developing web applications using modern technologies. 
+                        </span>
+                    </aside>
+                    <aside className='mini-projects'>
+                        <Link to='/projects'>
+                            <h2 className="title-block">Projects</h2>
+                        </Link>
+                        <span className="home-page__txt">
+                            A brief description of projects.
+                        </span>
+                    </aside>
+                </div>
+                <article className="mini-blog">
+                    <Link to='/blog'>
+                        <h2 className="title-block">Blog</h2>
+                    </Link>
+                    <span className="home-page__txt">
+                       Some last posts.
+                    </span>
+                </article>
+            </div>
+            
         </section>
     );
 };

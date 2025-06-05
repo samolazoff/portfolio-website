@@ -6,6 +6,7 @@ import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
 import Projects from '../pages/Projects/Projects';
 import Contacts from '../pages/Contacts/Contacts';
+import Blog from '../pages/Blog/Blog';
 
 
 const AppRoutes = () => {
@@ -16,6 +17,7 @@ const AppRoutes = () => {
                     <Route index element={<Home></Home>}></Route>
                     <Route path="/about" element={<About />}></Route>
                     <Route path="/projects" element={<Projects />} ></Route>
+                    <Route path="/blog" element={<Blog />} ></Route>
                     <Route path="/contacts" element={<Contacts />} ></Route>
                 {/* <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
