@@ -1,0 +1,23 @@
+@use '../../styles/var.scss';
+
+.lang-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .25rem;
+    &__btn{
+        padding: .5rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        color: var.$txt-main;
+        cursor: pointer;
+        &:hover{
+            background-color: var.$accent;
+        }
+        &_active{
+            background-color: var.$active;
+        }
+    }
+    
+}

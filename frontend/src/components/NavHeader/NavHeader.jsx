@@ -1,6 +1,7 @@
 import './NavHeader.scss';
 
 import NavItem from './NavItem';
+import LangPanel from '../LangPanel/LangPanel';
 
 const dataNav = [
     {
@@ -40,6 +41,7 @@ const NavHeader = (props) => {
                         <NavItem name={item.name} path={item.path} key={index}/>
                     ))
                 }
+                <LangPanel/>
             </ul>
         </nav>
     );
