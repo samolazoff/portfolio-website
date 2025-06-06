@@ -7,7 +7,7 @@ import './Home.scss';
 const Home = () => {
     return (
         <section className='container home-page'>
-            <div className="home-page-box">
+            <div className="home-page-box-start">
                 <div className="home-page-txt-box">
                     <h2 className="title-block">
                         Hi, I'm Raman Samalazau

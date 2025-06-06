@@ -9,24 +9,24 @@
 }
 
 .btn{
-  display: block;
-  width: 200px;
-  padding: 1rem 1.2rem;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 1.5rem;
-  &__main{
-    background-color: var.$accent;
-    &:hover{
-      background-color: var.$active;
+    display: block;
+    width: 200px;
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    &__main{
+        background-color: var.$accent;
+        &:hover{
+        background-color: var.$active;
+        }
     }
-  }
-  &__important{
-    background-color: var.$active;
-    &:hover{
-      background-color: var.$accent;
+    &__important{
+        background-color: var.$active;
+        &:hover{
+        background-color: var.$accent;
+        }
     }
-  }
 }
 
 .container{
@@ -37,39 +37,63 @@
 }
 
 .app-main{
-  position: relative;
-  padding-top: 1rem;
-  z-index: 1;
+    position: relative;
+    padding-top: 1rem;
+    z-index: 1;
 }
 .title-block{
-  font-size: 4rem;
+    font-size: 4rem;
 }
 @media screen and (max-width: 1400px) {
- .container {
-    max-width: 1200px;
-  }
+    .container {
+        max-width: 1200px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
- .container {
-    max-width: 992px;
-  }
+    .container {
+        max-width: 992px;
+    }
+    .title-block{
+        font-size: 3rem;
+    }
+    .btn{
+        width: 170px;
+        padding: .8rem 1rem;
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
- .container {
-    max-width: 768px;
-  }
+    .container {
+        max-width: 768px;
+        padding: .5rem 1rem;
+    }
+    .title-block{
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
- .container {
-    max-width: 576px;
-  }
+    .container {
+        max-width: 576px;
+    }
+     .title-block{
+        font-size: 2rem;
+    }
+    .btn{
+        width: 100px;
+        padding: .8rem 1rem;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
- .container {
-    max-width: 320px;
-  }
+    .container {
+        padding: 1rem 2rem;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+   
 }
