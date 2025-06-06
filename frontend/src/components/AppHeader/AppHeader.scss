@@ -6,7 +6,7 @@
         justify-content: flex-end;
         align-items: center;
         &_mobile{
-            position: relative;
+            position: fixed;
             width: 300px;
             height: 100vh;
             padding-top: 50px;
@@ -31,7 +31,7 @@
 @media screen and (max-width: 992px) {
     .app-header{
         .container{
-            position: relative;
+            position: fixed;
             flex-direction: column;
             justify-content: flex-start;
             align-items:center;
