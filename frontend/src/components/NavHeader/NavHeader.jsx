@@ -7,30 +7,6 @@ import {useSelector} from 'react-redux';
 
 import dataTXT from '../../data/language.json';
 
-// const dataNav = [
-//     {
-//         name: 'home',
-//         path: '/'
-//     },
-//     {
-//         name: 'about',
-//         path: '/about'
-//     },
-//     {
-//         name: 'projects',
-//         path: '/projects'
-//     },
-//     {
-//         name: 'blog',
-//         path: '/blog'
-//     },
-//     {
-//         name: 'contacts',
-//         path: '/contacts'
-//     }
-
-// ];
-
 const NavHeader = () => {
 
     const menuOpen = useSelector((state) => state.interface.menuOpen);

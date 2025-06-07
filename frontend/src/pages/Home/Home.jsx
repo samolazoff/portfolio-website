@@ -1,24 +1,28 @@
 import {NavLink, Link} from 'react-router';
+import {useSelector} from 'react-redux';
 
 import page from '/ChatGPT.png';
 
 import './Home.scss';
 
+import dataTXT from '../../data/language.json';
+
 const Home = () => {
+
+    const language = useSelector((state) => state.language.language);
+    const txt = (language === 'EN') ? dataTXT.EU.startPage : dataTXT.RU.startPage;
+    const {title, subtitle, descript, btnSkills, btnWorks} = txt;
+
     return (
         <section className='container home-page'>
             <div className="home-page-box-start">
                 <div className="home-page-txt-box">
-                    <h2 className="title-block">
-                        Hi, I'm Raman Samalazau
-                    </h2>
-                    <span className="home-page__subtitle">Web Developer</span>
-                    <span className="home-page__txt">
-                        I  specialize in building and designing web applications.
-                    </span>
+                    <h2 className="title-block">{title}</h2>
+                    <span className="home-page__subtitle">{subtitle}</span>
+                    <span className="home-page__txt">{descript}</span>
                     <div className="home-page-btn-box">
-                        <NavLink className='btn btn__main' to={'/about'}> View My Skills</NavLink>
-                        <NavLink className='btn btn__important' to={'/projects'}>View My Work</NavLink>
+                        <NavLink className='btn btn__main' to={'/about'}>{btnSkills}</NavLink>
+                        <NavLink className='btn btn__important' to={'/projects'}>{btnWorks}</NavLink>
                     </div>
                 </div>
                 <img src={page} alt="home-page__img" className="home-page__img" />

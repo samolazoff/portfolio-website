@@ -21,7 +21,14 @@
                 "name": "contacts",
                 "path": "/contacts"
             }
-        ]
+        ],
+        "startPage": {
+            "title": "Hi, I'm Raman",
+            "subtitle": "Web Developer",
+            "descript": "I specialize in building and designing web applications.",
+            "btnSkills":"View My Skills",
+            "btnWorks":"View My Work"
+        }
     },
     "RU": {
         "header": [
@@ -45,6 +52,13 @@
                 "name": "контакты",
                 "path": "/contacts"
             }
-        ]
+        ],
+        "startPage": {
+            "title": "Привет, Я Роман",
+            "subtitle": "Web разработчик",
+            "descript": "Я специализируюсь на создании и проектировании Web-приложений.",
+            "btnSkills":"Мои скилы",
+            "btnWorks":"Мои работы"
+        }
     }
 }
