@@ -1,0 +1,50 @@
+{
+    "EU": {
+        "header": [
+            {
+                "name": "home",
+                "path": "/"
+            },
+            {
+                "name": "about",
+                "path": "/about"
+            },
+            {
+                "name": "projects",
+                "path": "/projects"
+            },
+            {
+                "name": "blog",
+                "path": "/blog"
+            },
+            {
+                "name": "contacts",
+                "path": "/contacts"
+            }
+        ]
+    },
+    "RU": {
+        "header": [
+            {
+                "name": "главная",
+                "path": "/"
+            },
+            {
+                "name": "обо мне",
+                "path": "/about"
+            },
+            {
+                "name": "проекты",
+                "path": "/projects"
+            },
+            {
+                "name": "блог",
+                "path": "/blog"
+            },
+            {
+                "name": "контакты",
+                "path": "/contacts"
+            }
+        ]
+    }
+}
