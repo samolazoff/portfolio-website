@@ -3,6 +3,8 @@ import './NavHeader.scss';
 import NavItem from './NavItem';
 import LangPanel from '../LangPanel/LangPanel';
 
+import {useSelector} from 'react-redux';
+
 const dataNav = [
     {
         name: 'home',
@@ -27,18 +29,21 @@ const dataNav = [
 
 ];
 
-const NavHeader = (props) => {
+const NavHeader = () => {
 
-    const {isOpen} = props;
+    const menuOpen = useSelector((state) => state.interface.menuOpen)
 
     return (
-        <nav className={isOpen ?'header-nav-mobile':'header-nav'}>
+        <nav className={menuOpen ?'header-nav-mobile':'header-nav'}>
             <ul className={
-                isOpen ?'header-nav-items-mobile':'header-nav-items'
+                menuOpen ?'header-nav-items-mobile':'header-nav-items'
                 }>
                 {
                     dataNav.map((item, index) => (
-                        <NavItem name={item.name} path={item.path} key={index}/>
+                        <NavItem 
+                            name={item.name} 
+                            path={item.path} 
+                            key={index}/>
                     ))
                 }
                 <LangPanel/>
