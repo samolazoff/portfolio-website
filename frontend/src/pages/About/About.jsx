@@ -1,5 +1,7 @@
 import {useSelector} from 'react-redux';
 
+import SocialMedia from '../../components/SocialMedia/SocialMedia';
+
 import './About.scss';
 
 import page from '/ChatGPT.png';
@@ -122,7 +124,7 @@ const About = () => {
                     <h3 className='about-page__subtitle'>{subtitleEnd}</h3>
                     <p className='about-page__txt'>{txtEnd1}</p>
                     <p className='about-page__txt'>{txtEnd2}</p>
-                    <div className="social-panel"></div>
+                    <SocialMedia/>
                 </div>
                 <img src={page} alt="about-page__img" className="about-page__img" />
             </div>

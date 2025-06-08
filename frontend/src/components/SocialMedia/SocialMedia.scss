@@ -1,0 +1,14 @@
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 1rem;
+    li{
+        a{
+            img{
+                width: 2rem;
+            }
+        }
+    }
+}
