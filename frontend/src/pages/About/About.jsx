@@ -2,9 +2,9 @@ import './About.scss';
 
 const About = () => {
     return (
-        <div>
+        <section className='about-page container'>
             About
-        </div>
+        </section>
     );
 };
 

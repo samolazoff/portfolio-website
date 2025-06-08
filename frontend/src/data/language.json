@@ -27,7 +27,19 @@
             "subtitle": "Web Developer",
             "descript": "I specialize in building and designing web applications.",
             "btnSkills":"View My Skills",
-            "btnWorks":"View My Work"
+            "btnWorks":"View My Work",
+            "forAbout":{
+                "title": "About Me",
+                "txt": "I am a web developer with a passion for creating beautiful, responsive and user-friendly websites. I have experience in developing web applications using modern technologies."
+            },
+            "forPrj":{
+                "title": "Projects",
+                "txt": "A brief description of projects."
+            },
+            "forBlog":{
+                "title": "Blog",
+                "txt": "Some last posts."
+            }
         }
     },
     "RU": {
@@ -58,7 +70,19 @@
             "subtitle": "Web разработчик",
             "descript": "Я специализируюсь на создании и проектировании Web-приложений.",
             "btnSkills":"Мои скилы",
-            "btnWorks":"Мои работы"
+            "btnWorks":"Мои работы",
+            "forAbout":{
+                "title": "Обо Мне",
+                "txt": "Я веб-разработчик, увлеченный созданием красивых, адаптивных и удобных в использовании веб-сайтов. У меня есть опыт разработки веб-приложений с использованием современных технологий."
+            },
+            "forPrj":{
+                "title": "Проекты",
+                "txt": "Краткое описание проектов."
+            },
+            "forBlog":{
+                "title": "Блог",
+                "txt": "Последние посты"
+            }
         }
     }
 }

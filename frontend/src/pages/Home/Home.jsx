@@ -11,7 +11,7 @@ const Home = () => {
 
     const language = useSelector((state) => state.language.language);
     const txt = (language === 'EN') ? dataTXT.EU.startPage : dataTXT.RU.startPage;
-    const {title, subtitle, descript, btnSkills, btnWorks} = txt;
+    const {title, subtitle, descript, btnSkills, btnWorks, forAbout, forBlog, forPrj} = txt;
 
     return (
         <section className='container home-page'>
@@ -31,28 +31,22 @@ const Home = () => {
                 <div className="home-page-box-mini">
                     <aside className='mini-about'>
                         <Link to='/about'>
-                            <h2 className="title-block">About Me</h2>
+                            <h2 className="title-block">{forAbout.title}</h2>
                         </Link>
-                        <span className="home-page__txt">
-                            I  am a web developer with a passion for creating beautiful, resposive and user-friendly websites. I have experience in developing web applications using modern technologies. 
-                        </span>
+                        <span className="home-page__txt">{forAbout.txt}</span>
                     </aside>
                     <aside className='mini-projects'>
                         <Link to='/projects'>
-                            <h2 className="title-block">Projects</h2>
+                            <h2 className="title-block">{forPrj.title}</h2>
                         </Link>
-                        <span className="home-page__txt">
-                            A brief description of projects.
-                        </span>
+                        <span className="home-page__txt">{forPrj.txt}</span>
                     </aside>
                 </div>
                 <article className="mini-blog">
                     <Link to='/blog'>
-                        <h2 className="title-block">Blog</h2>
+                        <h2 className="title-block">{forBlog.title}</h2>
                     </Link>
-                    <span className="home-page__txt">
-                       Some last posts.
-                    </span>
+                    <span className="home-page__txt">{forBlog.txt}</span>
                 </article>
             </div>
             
