@@ -27,5 +27,25 @@
             width: 700px;
         }
     }
-    
+    &-skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        &-items{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        &__item{
+            img{
+                width: 150px;
+            }
+        }
+    }
 }
