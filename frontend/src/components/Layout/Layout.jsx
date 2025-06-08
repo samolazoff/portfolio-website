@@ -1,15 +1,15 @@
-import React from 'react';
-
 import { Outlet } from 'react-router';
+
 import AppHeader from '../AppHeader/AppHeader';
 import AppFooter from '../AppFooter/AppFooter';
 
-const Layout = () => {
+const Layout = ({txtContent}) => {
+
     return (
         <>
-            <AppHeader/>
+            <AppHeader txtContent={txtContent}/>
             <main className='app-main'>
-                <Outlet/>
+                <Outlet />
             </main>
             <AppFooter/>
         </>

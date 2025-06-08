@@ -5,13 +5,10 @@ import LangPanel from '../LangPanel/LangPanel';
 
 import {useSelector} from 'react-redux';
 
-import dataTXT from '../../data/language.json';
-
-const NavHeader = () => {
+const NavHeader = ({txtContent}) => {
 
     const menuOpen = useSelector((state) => state.interface.menuOpen);
-    const language = useSelector((state) => state.language.language);
-    const dataNav = (language === 'EN') ? dataTXT.EU.header : dataTXT.RU.header;
+    const txt = txtContent.header;
     
     return (
         <nav className={menuOpen ?'header-nav-mobile':'header-nav'}>
@@ -19,7 +16,7 @@ const NavHeader = () => {
                 menuOpen ?'header-nav-items-mobile':'header-nav-items'
                 }>
                 {
-                    dataNav.map((item, index) => (
+                    txt.map((item, index) => (
                         <NavItem 
                             name={item.name} 
                             path={item.path} 

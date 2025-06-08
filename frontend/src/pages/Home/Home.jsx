@@ -1,18 +1,13 @@
 import {NavLink, Link} from 'react-router';
-import {useSelector} from 'react-redux';
 
 import page from '/ChatGPT.png';
 
 import './Home.scss';
 
-import dataTXT from '../../data/language.json';
+const Home = ({txtContent}) => {
 
-const Home = () => {
-
-    const language = useSelector((state) => state.language.language);
-    const txt = (language === 'EN') ? dataTXT.EU.startPage : dataTXT.RU.startPage;
-    const {title, subtitle, descript, btnSkills, btnWorks, forAbout, forBlog, forPrj} = txt;
-
+    const {title, subtitle, descript, btnSkills, btnWorks, forAbout, forBlog, forPrj} = txtContent.startPage;
+    
     return (
         <section className='container home-page'>
             <div className="home-page-box-start">
