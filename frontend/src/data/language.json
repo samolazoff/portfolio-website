@@ -40,6 +40,16 @@
                 "title": "Blog",
                 "txt": "Some last posts."
             }
+        },
+        "aboutPage":{
+            "title":"About Me",
+            "subtitleMain":"Hi there! I'm Roman, web developer.",
+            "txtMain1": "I started building websites back in 2012, just for fun. It was a hobby at first — learning HTML, writing scripts late at night, experimenting with layouts. Today, I’ve decided to make it my main profession. For me, web development is more than just code — it’s a way to create something real and meaningful." ,
+            "txtMain2": "My main stack is MERN (MongoDB, Express, React, Node.js), but I’m always learning and growing. Lately, I’ve been diving into Next.js and exploring PHP. Honestly, I’m curious about everything — backend, frontend, UI, performance — the whole journey excites me.",
+            "subtitleSkills":"My Skills",
+            "subtitleEnd":"In the end...",
+            "txtEnd1":"I love clean, simple, elegant pages — with no clutter, just thoughtful design and smooth functionality. I believe in the “less is more” philosophy where everything has a purpose and works beautifully.",
+            "txtEnd2":"This site marks the beginning of my new path. I’m open to interesting projects and connections with like-minded developers."
         }
     },
     "RU": {
@@ -83,6 +93,16 @@
                 "title": "Блог",
                 "txt": "Последние посты"
             }
+        },
+        "aboutPage":{
+            "title":"Обо мне",
+            "subtitleMain":"Привет! Меня зовут Роман. Я веб-разработчик.",
+            "txtMain1": "С 2012 года веб был моим хобби — я создавал сайты из любопытства, изучал HTML и JavaScript по ночам и экспериментировал с дизайнами. Сегодня я решил сделать это своим основным делом. Разработка — это не просто код, это способ создавать что-то настоящее и полезное." ,
+            "txtMain2": "Мой основной стек —  MERN (MongoDB, Express, React, Node.js), но я постоянно учусь и двигаюсь дальше: сейчас осваиваю Next.js и PHP. Честно говоря, мне интересно почти всё, что связано с вебом — от бэкенда до микровзаимодействий на фронтенд.",
+            "subtitleSkills":"Мои навыки",
+            "subtitleEnd":"В конце...",
+            "txtEnd1":"Люблю чистые, простые и изящные страницы — без лишнего визуального шума. Мне близок подход «меньше — значит лучше», где всё работает быстро и понятно.",
+            "txtEnd2":"Этот сайт — начало моего нового пути. Буду рад интересным проектам и знакомствам в профессиональном сообществе."
         }
     }
 }
