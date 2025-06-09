@@ -19,12 +19,12 @@ const AppRoutes = () => {
   return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout txtContent={txt}/>}>
-                    <Route index element={<Home  txtContent={txt}></Home>}></Route>
-                    <Route path="/about" element={<About  txtContent={txt}/>}></Route>
-                    <Route path="/projects" element={<Projects txtContent={txt}/>} ></Route>
-                    <Route path="/blog" element={<Blog txtContent={txt}/>} ></Route>
-                    <Route path="/contacts" element={<Contacts txtContent={txt}/>} ></Route>
+                <Route path="/" element  = {<Layout txtContent = {txt}/>}>
+                    <Route index element = {<Home  txtContent = {txt}/>}></Route>
+                    <Route path = "/about" element = {<About txtContent = {txt}/>}></Route>
+                    <Route path = "/projects" element = {<Projects txtContent = {txt}/>} ></Route>
+                    <Route path = "/blog" element = {<Blog txtContent = {txt}/>} ></Route>
+                    <Route path = "/contacts" element = {<Contacts txtContent = {txt}/>} ></Route>
                 {/* <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/projects/:id" element={<ProjectDetail />} />

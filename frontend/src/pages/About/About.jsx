@@ -21,8 +21,8 @@ import imgGit from '../../static/icons/git-svgrepo-com.svg';
 
 function itemStack(name, img) {
     return(
-        <li className="about-page-skills__item" key={name}>
-            <img src={img} alt={name} title={name}/>
+        <li className = "about-page-skills__item" key = {name}>
+            <img src = {img} alt = {name} title = {name}/>
         </li>
     )
 };
@@ -91,19 +91,19 @@ const About = ({txtContent}) => {
     const {title, subtitleMain, txtMain1, txtMain2, subtitleSkills, subtitleEnd, txtEnd1, txtEnd2} = txtContent.aboutPage;
 
     return (
-        <section className='about-page container'>
-            <div className="about-page-start-box">
-                <div className="about-page-start-box-txt">
-                    <h2 className='title-block'>{title}</h2>
-                    <h3 className='about-page__subtitle'>{subtitleMain}</h3>
-                    <p className='about-page__txt'>{txtMain1}</p>
-                    <p className='about-page__txt'>{txtMain2}</p>
+        <section className = 'about-page container'>
+            <div className = "about-page-start-box">
+                <div className = "about-page-start-box-txt">
+                    <h2 className = 'title-block'>{title}</h2>
+                    <h3 className = 'about-page__subtitle'>{subtitleMain}</h3>
+                    <p className = 'about-page__txt'>{txtMain1}</p>
+                    <p className = 'about-page__txt'>{txtMain2}</p>
                 </div>
-                <img src={page} alt="about-page__img" className="about-page__img" />
+                <img src = {page} alt = "about-page__img" className = "about-page__img" />
             </div>
-            <div className="about-page-skills">
-                <h3 className='about-page__subtitle'>{subtitleSkills}</h3>
-                <ul className="about-page-skills-items">
+            <div className = "about-page-skills">
+                <h3 className = 'about-page__subtitle'>{subtitleSkills}</h3>
+                <ul className = "about-page-skills-items">
                     {
                         imgArr.map((item) => {
                             return (
@@ -113,14 +113,14 @@ const About = ({txtContent}) => {
                     }
                 </ul>
             </div>
-            <div className="about-page-start-box">
-                <div className="about-page-start-box-txt">
-                    <h3 className='about-page__subtitle'>{subtitleEnd}</h3>
-                    <p className='about-page__txt'>{txtEnd1}</p>
-                    <p className='about-page__txt'>{txtEnd2}</p>
+            <div className = "about-page-start-box">
+                <div className = "about-page-start-box-txt">
+                    <h3 className = 'about-page__subtitle'>{subtitleEnd}</h3>
+                    <p className = 'about-page__txt'>{txtEnd1}</p>
+                    <p className = 'about-page__txt'>{txtEnd2}</p>
                     <SocialMedia/>
                 </div>
-                <img src={page} alt="about-page__img" className="about-page__img" />
+                <img src = {page} alt = "about-page__img" className = "about-page__img" />
             </div>
         </section>
     );
