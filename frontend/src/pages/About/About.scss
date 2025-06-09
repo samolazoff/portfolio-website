@@ -49,3 +49,20 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+ .about-page{
+        &-txt-box{
+            width: 400px;
+        }
+        &__subtitle{
+            font-size: 2rem;
+        }
+        &__txt{
+            font-size: 1.5rem;
+        }
+        &__img{
+            width: 300px;
+        }
+    }
+}

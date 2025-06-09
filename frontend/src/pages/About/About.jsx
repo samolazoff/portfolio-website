@@ -1,5 +1,3 @@
-import {useSelector} from 'react-redux';
-
 import SocialMedia from '../../components/SocialMedia/SocialMedia';
 
 import './About.scss';
@@ -20,8 +18,6 @@ import imgMongo from '../../static/icons/mongo-svgrepo-com.svg';
 import imgBoots from '../../static/icons/bootstrap-svgrepo-com.svg';
 import imgTail from '../../static/icons/tailwind-svgrepo-com.svg';
 import imgGit from '../../static/icons/git-svgrepo-com.svg';
-
-import dataTXT from '../../data/language.json';
 
 function itemStack(name, img) {
     return(
@@ -90,11 +86,9 @@ const imgArr = [
         },
 ];
 
-const About = () => {
+const About = ({txtContent}) => {
 
-    const language = useSelector((state) => state.language.language);
-    const txt = (language === 'EN') ? dataTXT.EU.aboutPage : dataTXT.RU.aboutPage;
-    const {title, subtitleMain, txtMain1, txtMain2, subtitleSkills, subtitleEnd, txtEnd1, txtEnd2} = txt;
+    const {title, subtitleMain, txtMain1, txtMain2, subtitleSkills, subtitleEnd, txtEnd1, txtEnd2} = txtContent.aboutPage;
 
     return (
         <section className='about-page container'>
