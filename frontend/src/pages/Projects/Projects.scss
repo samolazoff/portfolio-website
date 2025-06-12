@@ -1,5 +1,51 @@
-iframe {
-    overflow: hidden hidden;
-    width: 500px;
-    height: 300px;
+.page-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    &-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    &-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid;
+        border-radius: 20px;
+        width: 600px;
+        height: 350px;
+        &__img{
+            width: 350px;
+            height: 300px;
+            object-fit: cover;
+            object-position: top;
+            &:hover{
+                width:352px;
+            }
+        }
+        &-box-txt{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+            
+        }
+        &__title{
+            font-size: 2rem;
+        }
+        &__txt{
+            font-size: 1.2rem;
+        }
+    }
 }
