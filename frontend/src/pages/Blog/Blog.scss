@@ -1,0 +1,43 @@
+.page-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    &-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    &-post{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        border: solid 1px;
+        padding: 2rem;
+        border-radius: 2rem;
+        &__txt{
+            text-indent: 2rem;
+            font-size: 1.5rem;
+            &_signature{
+                margin: 2rem;
+                align-self: flex-end;
+                font-style: italic;
+            }
+        }
+        &__title{
+            margin: 2rem;
+            padding-top: 1rem;
+            border-bottom: solid 1px;
+            font-size: 2.5rem;
+            align-self: center;
+        }
+        &__date{
+            align-self: flex-end;
+        }
+    }
+}
